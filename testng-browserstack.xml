@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Browser Stack Test Automation Regression Suite"
+       thread-count="3" parallel="tests" verbose="3">
+
+    <test name="BrowserStack Test - Edge">
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="10"/>
+        <parameter name="browser" value="Edge"/>
+        <parameter name="browser_version" value="112.0"/>
+
+        <classes>
+            <class name="BrowserStack.SauceTest"/>
+        </classes>
+    </test>
+
+    <test name="BrowserStack Test - Chrome">
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="10"/>
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser_version" value="112.0"/>
+
+        <classes>
+            <class name="BrowserStack.SauceTest"/>
+        </classes>
+    </test>
+</suite>
